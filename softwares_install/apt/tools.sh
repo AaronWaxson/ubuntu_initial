@@ -14,4 +14,4 @@ if [ $? -eq 0 ]; then
 fi
 
 # simplescreenrecorder
-. ./simplescreenrecorder.sh
+. `pwd`/simplescreenrecorder.sh

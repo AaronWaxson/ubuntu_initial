@@ -1,7 +1,7 @@
 #!/bin/bash
 zsh --version
 if [ $? -ne 0 ]; then
-    sh -c ./install.sh
+    sh -c `pwd`/install.sh
 fi
 echo "oh_my_zsh installed."
 

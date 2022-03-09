@@ -1,15 +1,16 @@
 #!/bin/bash
 # vscode
-. submodules/vscode.sh
+. `pwd`/submodules/vscode.sh
 # gitkraken
-. submodules/gitkraken.sh
+. `pwd`/submodules/gitkraken.sh
 # joplin
-. submodules/joplin/joplin.sh
+. `pwd`/submodules/joplin/joplin.sh
 # zetoro (need install manually)
-# . submodules/zetoro.sh
+# . `pwd`/submodules/zetoro.sh
 # miniconda
-. submodules/miniconda.sh
+. `pwd`/submodules/miniconda.sh
 # chrome
-. submodules/chrome.sh
+. `pwd`/submodules/chrome.sh
 # ohmyzsh
-. submodules/ohmyzsh/ohmyzsh.sh
+. `pwd`/submodules/ohmyzsh/ohmyzsh.sh
+# wechat
