@@ -9,7 +9,7 @@ sudo apt autoremove --purge -y
 # terminator
 # qlipper (paste board)
 # zsh
-if [ $? -ne 0 ]; then
+if [ $? -eq 0 ]; then
     sudo apt install -y vim git terminator qlipper locate zsh
 fi
 
