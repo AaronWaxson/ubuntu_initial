@@ -1,5 +1,8 @@
 #!/bin/bash
 install_path=~/Documents/installation
+compress_path=~/Documents/compress
+softwares_path=~/Documents/softwares
+
 # vscode
 vscode_name=code_1.65.1-1646706496_amd64.deb
 code --version
@@ -26,13 +29,19 @@ fi
 
 # joplin
 joplin_name=Joplin-2.7.13.AppImage
-if [ ! -d ${install_path}/${joplin_name} ]; then
-    wget https://github-do.panbaidu.cn//https://github.com/laurent22/joplin/releases/download/v2.7.13/Joplin-2.7.13.AppImage -P ${install_path} | bash
-    if [ $? -ne 0 ]; then
-        sudo dpkg -i ${joplin_name}
-    fi
+if [ ! -d ${softwares_path}/${joplin_name} ]; then
+    wget https://github-do.panbaidu.cn//https://github.com/laurent22/joplin/releases/download/v2.7.13/${joplin_name} -P ${softwares_path}
 fi
-# zetoro
+
+# zetoro (need install manually)
+zetoro_name=Zotero-5.0.96.3_linux-x86_64.tar.bz2
+if [ ! -d ${compress_path}/${zetoro_name} ]; then
+    wget https://download.zotero.org/client/release/5.0.96.3/${zetoro_name} -P ${compress_path}
+fi
+# To-do: plugins
+
 # miniconda
+
 # chrome
+
 # ohmyzsh
