@@ -1,5 +1,5 @@
 #!/bin/bash
-zsh --help
+zsh --version
 if [ $? -ne 0 ]; then
     sh -c ./install.sh
 fi
@@ -22,4 +22,4 @@ if [ ! -f ${font_path}/Hack\ Regular\ Nerd\ Font\ Complete.ttf ]; then
 fi
 echo "nerd-fonts downloaded, but need manually install and configure."
 
-cp ./zshrc_configuration ${HOME}/.zshrc
+# cp zshrc_configuration ${HOME}/.zshrc

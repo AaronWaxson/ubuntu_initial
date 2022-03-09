@@ -6,7 +6,7 @@
 # joplin
 . submodules/joplin/joplin.sh
 # zetoro (need install manually)
-. submodules/zetoro.sh
+# . submodules/zetoro.sh
 # miniconda
 . submodules/miniconda.sh
 # chrome
