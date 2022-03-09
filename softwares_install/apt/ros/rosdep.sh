@@ -1,5 +1,5 @@
 #!/bin/bash
-distro_path=~/Documents/rosdistro
+distro_path=${HOME}/Documents/rosdistro
 
 # sources.list.d 
 change_path=https://raw.githubusercontent.com/ros/rosdistro

@@ -1,5 +1,5 @@
 #!/bin/bash
-pip_path=~/.pip
+pip_path=${HOME}/.pip
 if [ ! -d ${pip_path} ]
 then	
     mkdir ${pip_path}

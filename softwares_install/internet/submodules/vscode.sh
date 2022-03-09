@@ -1,5 +1,5 @@
 #!/bin/bash
-install_path=~/Documents/installation
+install_path=${HOME}/Documents/installation
 vscode_name=code_1.65.1-1646706496_amd64.deb
 code --version
 if [ $? -ne 0 ]; then

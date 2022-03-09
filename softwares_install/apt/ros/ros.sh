@@ -2,7 +2,7 @@
 sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
 
 # download rosdistro
-distro_path=~/Documents/rosdistro
+distro_path=${HOME}/Documents/rosdistro
 if [ ! -d ${distro_path} ]
 then
     git clone https://github.do/https://github.com/ros/rosdistro.git ${distro_path}

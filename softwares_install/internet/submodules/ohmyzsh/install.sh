@@ -16,7 +16,7 @@
 #   ZSH=~/.zsh sh install.sh
 #
 # Respects the following environment variables:
-#   ZSH     - path to the Oh My Zsh repository folder (default: $HOME/.oh-my-zsh)
+#   ZSH     - path to the Oh My Zsh repository folder (default: ${HOME}/.oh-my-zsh)
 #   REPO    - name of the GitHub repo to install from (default: ohmyzsh/ohmyzsh)
 #   REMOTE  - full remote URL of the git repo to install (default: GitHub via HTTPS)
 #   BRANCH  - branch to check out immediately after install (default: master)
@@ -42,11 +42,11 @@ set -e
 # $USER is defined by login(1) which is not always executed (e.g. containers)
 # POSIX: https://pubs.opengroup.org/onlinepubs/009695299/utilities/id.html
 USER=${USER:-$(id -u -n)}
-# $HOME is defined at the time of login, but it could be unset. If it is unset,
+# ${HOME} is defined at the time of login, but it could be unset. If it is unset,
 # a tilde by itself (~) will not be expanded to the current user's home directory.
 # POSIX: https://pubs.opengroup.org/onlinepubs/009696899/basedefs/xbd_chap08.html#tag_08_03
 HOME="${HOME:-$(getent passwd $USER 2>/dev/null | cut -d: -f6)}"
-# macOS does not have getent, but this works even if $HOME is unset
+# macOS does not have getent, but this works even if ${HOME} is unset
 HOME="${HOME:-$(eval echo ~$USER)}"
 
 
@@ -54,7 +54,7 @@ HOME="${HOME:-$(eval echo ~$USER)}"
 custom_zsh=${ZSH:+yes}
 
 # Default settings
-ZSH="${ZSH:-$HOME/.oh-my-zsh}"
+ZSH="${ZSH:-${HOME}/.oh-my-zsh}"
 REPO=${REPO:-ohmyzsh/ohmyzsh}
 REMOTE=${REMOTE:-https://github.do/https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
@@ -325,8 +325,8 @@ setup_zshrc() {
 
   echo "${FMT_GREEN}Using the Oh My Zsh template file and adding it to ~/.zshrc.${FMT_RESET}"
 
-  # Replace $HOME path with '$HOME' in $ZSH variable in .zshrc file
-  omz=$(echo "$ZSH" | sed "s|^$HOME/|\$HOME/|")
+  # Replace ${HOME} path with '${HOME}' in $ZSH variable in .zshrc file
+  omz=$(echo "$ZSH" | sed "s|^${HOME}/|\${HOME}/|")
   sed "s|^export ZSH=.*$|export ZSH=\"${omz}\"|" "$ZSH/templates/zshrc.zsh-template" > ~/.zshrc-omztemp
   mv -f ~/.zshrc-omztemp ~/.zshrc
 
@@ -440,7 +440,7 @@ print_success() {
   printf '\n'
   printf '\n'
   printf "%s %s %s\n" "Before you scream ${FMT_BOLD}${FMT_YELLOW}Oh My Zsh!${FMT_RESET} look over the" \
-    "$(fmt_code "$(fmt_link ".zshrc" "file://$HOME/.zshrc" --text)")" \
+    "$(fmt_code "$(fmt_link ".zshrc" "file://${HOME}/.zshrc" --text)")" \
     "file to select plugins, themes, and options."
   printf '\n'
   printf '%s\n' "• Follow us on Twitter: $(fmt_link @ohmyzsh https://twitter.com/ohmyzsh)"

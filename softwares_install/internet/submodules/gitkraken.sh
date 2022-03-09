@@ -1,5 +1,5 @@
 #!/bin/bash
-install_path=~/Documents/installation
+install_path=${HOME}/Documents/installation
 kraken_name=GitKraken-v6.5.1.deb
 gitkraken --version
 if [ $? -ne 0 ]; then
