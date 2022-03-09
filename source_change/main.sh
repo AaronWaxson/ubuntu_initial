@@ -1,6 +1,6 @@
 #!/bin/bash
 # apt source backup
-. ./apt_change.sh
+. `pwd`/apt_change.sh
 # python source
-. ./pip_change.sh
+. `pwd`/pip_change.sh
 # miniconda source
