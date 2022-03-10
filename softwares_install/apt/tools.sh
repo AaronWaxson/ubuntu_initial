@@ -1,7 +1,6 @@
 #!/bin/bash
-
-sudo apt update &
-sudo apt upgrade -y &
+sudo apt update &&
+sudo apt upgrade -y &&
 sudo apt autoremove --purge -y
 
 # vim
@@ -14,4 +13,4 @@ if [ $? -eq 0 ]; then
 fi
 
 # simplescreenrecorder
-. $(pwd)/simplescreenrecorder.sh
+. ${UBUNTU_INITIAL_PATH}/simplescreenrecorder.sh

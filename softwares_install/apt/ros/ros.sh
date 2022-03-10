@@ -1,3 +1,3 @@
 #!/bin/bash
-. $(pwd)/apt.sh
-. $(pwd)/rosdep.sh
+. ${UBUNTU_INITIAL_PATH}/ros/apt.sh &&
+. ${UBUNTU_INITIAL_PATH}/ros/rosdep.sh
