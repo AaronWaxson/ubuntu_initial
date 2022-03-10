@@ -30,7 +30,7 @@ you can comment what your dont need, and add new what you need in `softwares/`
 * wechat
 
 ## Usage
-clone this project ans run ubuntu_intial.sh
+clone this project and run ubuntu_intial.sh
 
 ## Other
 Welcome any suggestions.
