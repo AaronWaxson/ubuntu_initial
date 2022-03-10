@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update &&
-sudo apt upgrade -y &&
-sudo apt autoremove --purge -y
+    sudo apt upgrade -y &&
+    sudo apt autoremove --purge -y
 
 # vim
 # git
@@ -13,4 +13,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # simplescreenrecorder
-. ${UBUNTU_INITIAL_PATH}/simplescreenrecorder.sh
+. $(pwd)/submodules/simplescreenrecorder.sh
+
+# docker
+. $(pwd)/submodules/docker/docker.sh

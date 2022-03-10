@@ -14,8 +14,7 @@ sudo apt update &
 sudo apt install ros-${ros_distro}-desktop-full -y
 
 if [ -n "$ZSH_VERSION" ]; then
-   # assume zsh    
-   source /opt/ros/${ros_distro}/setup.zsh
+    source /opt/ros/${ros_distro}/setup.zsh
 else
     source /opt/ros/${ros_distro}/setup.bash
 fi
