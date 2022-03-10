@@ -5,8 +5,8 @@
 . $(pwd)/softwares/internet/submodules/gitkraken.sh
 # joplin
 . $(pwd)/softwares/internet/submodules/joplin/joplin.sh
-# zetoro (need install manually)
-# . $(pwd)/softwares/internet/submodules/zetoro.sh
+# zotero
+. $(pwd)/softwares/internet/submodules/zetoro.sh
 # miniconda
 . $(pwd)/softwares/internet/submodules/miniconda/miniconda.sh
 # chrome
