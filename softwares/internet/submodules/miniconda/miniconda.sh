@@ -1,11 +1,6 @@
 #!/bin/bash
-install_path=${HOME}/Documents/installation
-conda_name=Miniconda3-latest-Linux-x86_64.sh
-if [ ! -f ${install_path}/${conda_name} ]; then
-    wget https://repo.anaconda.com/miniconda/${conda_name} -P ${install_path}
-    if [ $? -eq 0 ]; then
-        bash ${install_path}/${conda_name} -b -p ${HOME}/miniconda
-    fi
-fi
+. $(pwd)/softwares/internet/submodules/miniconda/install.sh
 
-echo "${conda_name} installed with silent mode."
+if [ $? -eq 0 ]; then
+    . $(pwd)/softwares/internet/submodules/miniconda/change_sources.sh
+fi

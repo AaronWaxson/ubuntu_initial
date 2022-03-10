@@ -1,3 +1,3 @@
 #!/bin/bash
-. $(pwd)/submodules/docker/install.sh &&
-. $(pwd)/submodules/docker/sources_change.sh 
+. $(pwd)/softwares/apt/submodules/docker/install.sh &&
+. $(pwd)/softwares/apt/submodules/docker/sources_change.sh 

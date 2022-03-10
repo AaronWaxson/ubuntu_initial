@@ -1,4 +1,3 @@
 #!/bin/bash
-. $(pwd)/submodules/tools.sh &&
-. $(pwd)/submodules/ros/ros.sh
-exit 0
+. $(pwd)/softwares/apt/submodules/tools.sh &&
+    . $(pwd)/softwares/apt/submodules/ros/ros.sh

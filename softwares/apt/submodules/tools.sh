@@ -13,7 +13,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # simplescreenrecorder
-. $(pwd)/submodules/simplescreenrecorder.sh
+. $(pwd)/softwares/apt/submodules/simplescreenrecorder.sh
 
 # docker
-. $(pwd)/submodules/docker/docker.sh
+. $(pwd)/softwares/apt/submodules/docker/docker.sh
