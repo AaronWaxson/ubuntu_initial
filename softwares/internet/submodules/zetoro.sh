@@ -1,8 +1,13 @@
 #!/bin/bash
-compress_path=${HOME}/Documents/compress
-zetoro_name=Zotero-5.0.96.3_linux-x86_64.tar.bz2
-if [ ! -f ${compress_path}/${zetoro_name} ]; then
-    wget https://download.zotero.org/client/release/5.0.96.3/${zetoro_name} -P ${compress_path}
+zetoro --version
+if [ $? -ne 0 ]; then
+    # zetoro
+    wget -qO- https://apt.retorque.re/file/zotero-apt/install.sh | sudo bash &&
+    sudo apt update &&
+    sudo apt install zotero -y
+
+    # juris-m
+    wget -qO- https://apt.retorque.re/file/zotero-apt/install.sh | sudo bash
+    sudo apt update
+    sudo apt install jurism -y
 fi
-# To-do: plugins
-echo "${zetoro_name} downloaded, need to install manually."
