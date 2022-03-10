@@ -26,5 +26,5 @@ echo "Docker installed."
 sudo groupadd docker
 sudo usermod -aG docker $USER
 if [ $? -eq 0 ]; then
-    echo "Log out and log back to use the feature."
+    echo "Log out and back, then input 'newgrp docker' in terminal to use the new feature."
 fi
