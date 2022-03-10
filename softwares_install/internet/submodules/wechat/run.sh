@@ -9,4 +9,7 @@ sudo docker run -d --name wechat --device /dev/snd --ipc="host" \
     -e AUDIO_GID=$(getent group audio | cut -d: -f3) \
     -e GID=$(id -g) \
     -e UID=$(id -u) \
+    -e XMODIFIERS=@im=ibus \
+    -e GTK_IM_MODULE=ibus \
+    -e QT_IM_MODULE=ibus \
     bestwu/wechat
