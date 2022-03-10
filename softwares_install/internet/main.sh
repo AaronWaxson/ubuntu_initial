@@ -13,4 +13,5 @@
 . $(pwd)/submodules/chrome.sh
 # ohmyzsh
 . $(pwd)/submodules/ohmyzsh/ohmyzsh.sh
-# wechat
+# wechat (use run_wechat.sh to start program)
+. $(pwd)/submodules/wechat/wechat.sh
