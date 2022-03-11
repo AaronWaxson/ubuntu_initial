@@ -6,10 +6,10 @@ sudo apt update &&
 # vim
 # git
 # terminator
-# qlipper (paste board)
+# parcellite (paste board)
 # zsh
 if [ $? -eq 0 ]; then
-    sudo apt install -y vim git terminator qlipper locate zsh
+    sudo apt install -y vim git terminator parcellite locate zsh
 fi
 
 # simplescreenrecorder

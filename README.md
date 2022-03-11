@@ -12,7 +12,7 @@ you can comment what your dont need, and add new what you need in `softwares/`
 * vim (terminal ide)
 * git
 * terminator
-* qlipper (paste board)
+* parcellite (paste board)
 * zsh
 * locate (file finding)
 * simplescreenrecorder
