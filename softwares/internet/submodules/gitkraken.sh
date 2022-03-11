@@ -5,7 +5,8 @@ gitkraken --version
 if [ $? -ne 0 ]; then
     wget https://release.axocdn.com/linux/${kraken_name} -P ${install_path}
     if [ $? -eq 0 ]; then
-        sudo dpkg -i ${install_path}/${kraken_name}
+        sudo dpkg -i ${install_path}/${kraken_name} &&
+        sudo apt install -f -y
     fi
 else
     echo "${kraken_name} installed."
