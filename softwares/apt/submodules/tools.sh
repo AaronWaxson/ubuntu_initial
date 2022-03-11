@@ -9,7 +9,7 @@ sudo apt update &&
 # parcellite (paste board)
 # zsh
 if [ $? -eq 0 ]; then
-    sudo apt install -y vim git terminator parcellite locate zsh
+    sudo apt install -y vim git terminator parcellite locate zsh curl
 fi
 
 # simplescreenrecorder
