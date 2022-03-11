@@ -7,5 +7,5 @@ then
 else
     sudo cp ${apt_path} ${apt_path}.bak
     # change inland sources
-    sed -i 's/cn.archive.ubuntu.com/mirrors.aliyun.com/g' ${apt_path}
+    sudo sed -i 's/cn.archive.ubuntu.com/mirrors.aliyun.com/g' ${apt_path}
 fi
