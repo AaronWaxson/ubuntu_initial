@@ -7,12 +7,11 @@ ros_distro=noetic
 # download rosdistro
 if [ ! -d ${distro_path} ]; then
     git clone https://github.do/https://github.com/ros/rosdistro.git ${distro_path}
+    sudo apt-key add ${distro_path}/ros.asc
 fi
-sudo apt install curl -y  # if you haven't already installed curl
-sudo apt-key add ${distro_path}/ros.asc
 
 sudo apt update &&
-sudo apt install ros-${ros_distro}-desktop-full -y
+    sudo apt install ros-${ros_distro}-desktop-full -y
 
 if [ -n "$ZSH_VERSION" ]; then
     source /opt/ros/${ros_distro}/setup.zsh
