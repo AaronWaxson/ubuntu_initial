@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # ros 1
 source /opt/ros/noetic/setup.zsh
 #source ${HOME}/Documents/Senior/msgs/install/setup.zsh
-source ${HOME}/catkin_ws/devel/setup.zsh
+# source ${HOME}/catkin_ws/devel/setup.zsh
 export TURTLEBOT3_MODEL=burger
 
 alias python=python3
