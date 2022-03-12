@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 zetoro --version
 if [ $? -ne 0 ]; then
     # zetoro
