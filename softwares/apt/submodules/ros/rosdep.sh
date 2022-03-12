@@ -16,9 +16,6 @@ sudo sed -i "s|${change_path}|${target_path}|g" /usr/lib/python3/dist-packages/r
 # __init__
 sudo sed -i "s|${change_path}|${target_path}|g" /usr/lib/python3/dist-packages/rosdistro/__init__.py
 
-source_list_path=/etc/ros/rosdep/sources.list.d/20-default.list
-if [ ! -f ${source_list_path} ]; then
-    sudo rosdep init
-    rosdep update
-fi
+sudo rosdep init
+rosdep update
 rm -rf ${distro_path}

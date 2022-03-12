@@ -4,12 +4,10 @@ sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.tuna.tsinghua.edu.cn/
 
 distro_path=${HOME}/Documents/rosdistro
 ros_distro=noetic
-# download rosdistro
-if [ ! -d ${distro_path} ]; then
-    git clone https://github.do/https://github.com/ros/rosdistro.git ${distro_path}
-    sudo apt-key add ${distro_path}/ros.asc
-fi
 
+# download rosdistro
+git clone https://github.do/https://github.com/ros/rosdistro.git ${distro_path}
+sudo apt-key add ${distro_path}/ros.asc
 sudo apt update &&
     sudo apt install ros-${ros_distro}-desktop-full -y
 
