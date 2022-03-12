@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+
 install_path=${HOME}/Documents/installation
 conda_name=Miniconda3-latest-Linux-x86_64.sh
 if [ ! -f ${install_path}/${conda_name} ]; then
