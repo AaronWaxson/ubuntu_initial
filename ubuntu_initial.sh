@@ -9,3 +9,5 @@ set -e
 # clean useless directories
 sudo rm -rf ${HOME}/Documents/installation
 sudo rm -rf ${HOME}/Documents/rosditro
+
+echo  -e "\033[47;41m ------------------------ All Done ------------------------ \033[0m"

@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+echo  -e "\033[47;46;1m ------------------------ pip sources ------------------------ \033[0m"
+
 pip_path=${HOME}/.pip
 if [ ! -d ${pip_path} ]
 then	
