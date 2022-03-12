@@ -35,5 +35,8 @@ you can comment what your dont need, and add new what you need in `softwares/`
 ## Usage
 clone this project and run ubuntu_intial.sh
 
+## Known Problems
+ohmyzsh moudle can not install automatically for now, you can use the script and change the executive path to install it manually.
+
 ## Other
 Welcome any suggestions.

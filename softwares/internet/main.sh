@@ -32,5 +32,5 @@ echo -e "\033[47;46;1m ------------------------ wechat ------------------------ 
 . $(pwd)/softwares/internet/submodules/wechat/wechat.sh
 
 # ohmyzsh
-echo -e "\033[47;46;1m ------------------------ ohmyzsh ------------------------ \033[0m"
-. $(pwd)/softwares/internet/submodules/ohmyzsh/ohmyzsh.sh
+# echo -e "\033[47;46;1m ------------------------ ohmyzsh ------------------------ \033[0m"
+# . $(pwd)/softwares/internet/submodules/ohmyzsh/ohmyzsh.sh
