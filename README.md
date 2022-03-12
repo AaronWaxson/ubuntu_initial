@@ -18,6 +18,9 @@ you can comment what your dont need, and add new what you need in `softwares/`
 * simplescreenrecorder
 * docker
 * ros (robot of system)
+* curl
+* aptitude (solution for apt install error)
+* system_monitor (observe cpu, network speed and so on)
 
 ### internet
 * vscode
