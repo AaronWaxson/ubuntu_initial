@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 install_path=${HOME}/Documents/installation
 chrome_name=google-chrome-stable_current_amd64.deb
 google-chrome --version

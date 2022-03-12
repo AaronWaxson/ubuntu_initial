@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 sudo apt update &&
     sudo apt upgrade -y &&
     sudo apt autoremove --purge -y
@@ -9,7 +10,7 @@ sudo apt update &&
 # parcellite (paste board)
 # zsh
 if [ $? -eq 0 ]; then
-    sudo apt install -y vim git terminator parcellite locate zsh curl
+    sudo apt install -y vim git terminator parcellite locate zsh curl aptitude
 fi
 
 # simplescreenrecorder

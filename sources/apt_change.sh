@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 apt_path=/etc/apt/sources.list
 # apt source backup
 if [ -e ${apt_path}.bak ]

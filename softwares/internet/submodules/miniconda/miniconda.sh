@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 . $(pwd)/softwares/internet/submodules/miniconda/install.sh
 
 if [ $? -eq 0 ]; then

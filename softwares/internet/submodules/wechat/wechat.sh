@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 docker image ls | grep wechat
 if [ $? -ne 0 ]; then
     sudo docker pull bestwu/wechat

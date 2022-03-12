@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # sudo apt-get remove docker docker-engine docker.io containerd runc
 docker --version
 if [ $? -ne 0 ]; then

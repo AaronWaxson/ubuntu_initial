@@ -1,9 +1,10 @@
 #!/bin/bash
-zsh --version
-if [ $? -ne 0 ]; then
-    sh -c $(pwd)/softwares/internet/submodules/ohmyzsh/install.sh
-fi
-echo "oh_my_zsh installed."
+set -e
+# zsh --version
+# if [ $? -ne 0 ]; then
+sh -c $(pwd)/softwares/internet/submodules/ohmyzsh/install.sh
+# fi
+# echo "oh_my_zsh installed."
 
 # plugins
 # autosuggestion

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 distro_path=${HOME}/Documents/rosdistro
 change_path=https://raw.githubusercontent.com/ros/rosdistro/master
 target_path=file://${distro_path}

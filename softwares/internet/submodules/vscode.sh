@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 install_path=${HOME}/Documents/installation
 vscode_name=code_1.65.1-1646706496_amd64.deb
 code --version

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # vscode
 . $(pwd)/softwares/internet/submodules/vscode.sh
 # gitkraken

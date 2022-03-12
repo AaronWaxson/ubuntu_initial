@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 pip_path=${HOME}/.pip
 if [ ! -d ${pip_path} ]
 then	

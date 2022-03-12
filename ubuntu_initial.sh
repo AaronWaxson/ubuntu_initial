@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # change to inland sources
 . $(pwd)/sources/main.sh
 

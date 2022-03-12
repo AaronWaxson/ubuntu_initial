@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 install_path=${HOME}/Documents/installation
 kraken_name=GitKraken-v6.5.1.deb
 gitkraken --version

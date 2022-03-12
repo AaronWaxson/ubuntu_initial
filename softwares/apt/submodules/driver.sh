@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Causion: not finished file, dont use
 # ubuntu driver
 sudo ubuntu-driver install
