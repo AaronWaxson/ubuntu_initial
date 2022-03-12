@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+
 sudo apt update &&
     sudo apt upgrade -y &&
     sudo apt autoremove --purge -y
@@ -18,6 +19,3 @@ fi
 
 # system_monitor
 . $(pwd)/softwares/apt/submodules/system_monitor.sh
-
-# docker
-. $(pwd)/softwares/apt/submodules/docker/docker.sh
