@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-echo  -e "\033[47;46;1m ------------------------ apt sources ------------------------ \033[0m"
 
 apt_path=/etc/apt/sources.list
 source_name=mirrors.aliyun.com
