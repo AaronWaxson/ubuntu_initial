@@ -26,10 +26,11 @@ echo -e "\033[47;46;1m ------------------------ miniconda ----------------------
 echo -e "\033[47;46;1m ------------------------ chrome ------------------------ \033[0m"
 . $(pwd)/softwares/internet/submodules/chrome.sh
 
-# ohmyzsh
-echo -e "\033[47;46;1m ------------------------ ohmyzsh ------------------------ \033[0m"
-. $(pwd)/softwares/internet/submodules/ohmyzsh/ohmyzsh.sh
 
 # wechat (use run_wechat.sh to start program)
 echo -e "\033[47;46;1m ------------------------ wechat ------------------------ \033[0m"
 . $(pwd)/softwares/internet/submodules/wechat/wechat.sh
+
+# ohmyzsh
+echo -e "\033[47;46;1m ------------------------ ohmyzsh ------------------------ \033[0m"
+. $(pwd)/softwares/internet/submodules/ohmyzsh/ohmyzsh.sh
