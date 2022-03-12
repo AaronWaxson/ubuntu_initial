@@ -16,5 +16,8 @@ fi
 # simplescreenrecorder
 . $(pwd)/softwares/apt/submodules/simplescreenrecorder.sh
 
+# system_monitor
+. $(pwd)/softwares/apt/submodules/system_monitor.sh
+
 # docker
 . $(pwd)/softwares/apt/submodules/docker/docker.sh
